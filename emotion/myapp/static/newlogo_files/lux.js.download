@@ -1,0 +1,1 @@
+console.log("SPEEDCURVE LUX ERROR: The SpeedCurve account linked to the `id` parameter is not active. Code: 200");LUX = (function () { return { mark: function(){}, measure: function(){}, init: function(){}, send: function(){}, addData: function(){}, doUpdate: function(){} }; })();

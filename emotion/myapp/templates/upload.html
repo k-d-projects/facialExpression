@@ -1,0 +1,35 @@
+{% load static %}
+
+<form method = "POST" class="post-form" enctype="multipart/form-data"> 
+        {% csrf_token %} 
+<table class="table" >
+    <thead>
+    <tr>
+        
+        <th>name</th>
+        <th>file</th>
+        <th>emotion</th>
+       <!-- <th>button</th>-->
+    </tr>
+    </thead>
+    <tbody>
+    {% for st in stu %}
+        <tr>
+            
+            <td>{{ st.name }}</td>
+            <td>{{ st.file1 }}</td>
+            <td rowspan="2">{{ st.value }}</td>
+          <!--  <td rowspan="2"><a href="{% url 'delete' st.id %}">Delete</a></td>-->
+        
+        </tr>
+
+    {% endfor %}
+<a href="/export_users_csv">Export all users</a>
+    </tbody>
+</table>
+
+       
+
+ 
+    </form> 
+
